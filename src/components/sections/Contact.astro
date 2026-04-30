@@ -1,52 +1,97 @@
 <section id="contato" class="relative overflow-hidden bg-zinc-950 py-24 sm:py-32">
-  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(99,102,241,0.28),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(34,197,94,0.18),_transparent_30%)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08),_transparent_35%)]"></div>
 
-  <div class="relative mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:px-8">
-    <div>
+  <div class="absolute left-1/2 top-0 h-px w-full -translate-x-1/2 bg-gradient-to-r from-transparent via-white/15 to-transparent"></div>
+
+  <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-[1fr_0.9fr] lg:px-8">
+    <div >
       <span class="inline-flex items-center rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-medium text-white/80 backdrop-blur">
-        Fale conosco
+        Lorem Ipsum
       </span>
 
-      <h2 class="mt-8 text-3xl font-bold tracking-tight text-white sm:text-5xl">
-        Lorem Ipsum Dolor Sit Amet
+      <h2 class="mt-8 max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+        Lorem ipsum dolor sit amet consectetur
       </h2>
 
-      <p class="mt-6 text-lg leading-8 text-zinc-300">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <p class="mt-6 max-w-xl text-lg leading-8 text-zinc-300">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
 
       <div class="mt-10 grid gap-4 sm:grid-cols-2">
-        <div class="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
-          <p class="font-semibold text-white">Lorem Ipsum</p>
-          <p class="mt-2 text-sm text-zinc-400">(XX) XXXXX-XXXX</p>
-        </div>
+        <a
+          href="https://wa.me/5500000000000"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-3xl border border-white/10 bg-white/10 p-6 backdrop-blur transition hover:bg-white/[0.14]"
+        >
+          <p class="font-semibold text-white">
+            Lorem Ipsum
+          </p>
 
-        <div class="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
-          <p class="font-semibold text-white">Dolor Sit</p>
-          <p class="mt-2 text-sm text-zinc-400">lorem@ipsum.com</p>
-        </div>
+          <p class="mt-2 text-sm leading-6 text-zinc-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+
+          <p class="mt-5 text-sm font-semibold text-white">
+            (00) 00000-0000
+          </p>
+        </a>
+
+        <a
+          href="mailto:contato@suaempresa.com.br"
+          class="rounded-3xl border border-white/10 bg-white/10 p-6 backdrop-blur transition hover:bg-white/[0.14]"
+        >
+          <p class="font-semibold text-white">
+            Dolor Sit
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-zinc-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+
+          <p class="mt-5 text-sm font-semibold text-white">
+            lorem@ipsum.com
+          </p>
+        </a>
       </div>
     </div>
 
     <form
       action="https://formspree.io/f/SEU_ID"
       method="POST"
-      class="rounded-[2rem] border border-white/10 bg-white p-4 sm:p-6 shadow-2xl lg:p-8"
+      class="rounded-[2rem] border border-white/10 bg-white p-5 shadow-2xl shadow-black/20 sm:p-8"
     >
-      <div class="grid gap-4 sm:gap-5">
-        <div>
-          <label for="nome" class="text-sm font-medium text-zinc-700">
-            Nome
-          </label>
+     
+      <div class="grid gap-5">
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label for="nome" class="text-sm font-medium text-zinc-700">
+              Nome
+            </label>
 
-          <input
-            id="nome"
-            name="nome"
-            type="text"
-            required
-            placeholder="Seu nome"
-            class="mt-2 w-full rounded-xl border border-zinc-200 px-4 py-3 text-sm outline-none transition focus:border-zinc-950"
-          />
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              required
+              placeholder="Seu nome"
+              class="mt-2 w-full rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-950 outline-none transition placeholder:text-zinc-400 focus:border-zinc-950 focus:bg-white"
+            />
+          </div>
+
+          <div>
+            <label for="telefone" class="text-sm font-medium text-zinc-700">
+              WhatsApp
+            </label>
+
+            <input
+              id="telefone"
+              name="telefone"
+              type="tel"
+              placeholder="(00) 00000-0000"
+              class="mt-2 w-full rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-950 outline-none transition placeholder:text-zinc-400 focus:border-zinc-950 focus:bg-white"
+            />
+          </div>
         </div>
 
         <div>
@@ -60,22 +105,26 @@
             type="email"
             required
             placeholder="seuemail@email.com"
-            class="mt-2 w-full rounded-xl border border-zinc-200 px-4 py-3 text-sm outline-none transition focus:border-zinc-950"
+            class="mt-2 w-full rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-950 outline-none transition placeholder:text-zinc-400 focus:border-zinc-950 focus:bg-white"
           />
         </div>
 
         <div>
-          <label for="telefone" class="text-sm font-medium text-zinc-700">
-            WhatsApp
+          <label for="servico" class="text-sm font-medium text-zinc-700">
+            Serviço de interesse
           </label>
 
-          <input
-            id="telefone"
-            name="telefone"
-            type="tel"
-            placeholder="(00) 00000-0000"
-            class="mt-2 w-full rounded-xl border border-zinc-200 px-4 py-3 text-sm outline-none transition focus:border-zinc-950"
-          />
+          <select
+            id="servico"
+            name="servico"
+            class="mt-2 w-full rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-950 outline-none transition focus:border-zinc-950 focus:bg-white"
+          >
+            <option value="">Selecione uma opção</option>
+            <option value="Lorem ipsum">Lorem ipsum</option>
+            <option value="Dolor sit">Dolor sit</option>
+            <option value="Amet consectetur">Amet consectetur</option>
+            <option value="Outro">Outro</option>
+          </select>
         </div>
 
         <div>
@@ -87,17 +136,21 @@
             id="mensagem"
             name="mensagem"
             rows="5"
-            placeholder="Conte um pouco sobre o projeto..."
-            class="mt-2 w-full rounded-xl border border-zinc-200 px-4 py-3 text-sm outline-none transition focus:border-zinc-950"
+            placeholder="Lorem ipsum dolor sit amet..."
+            class="mt-2 w-full resize-none rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-950 outline-none transition placeholder:text-zinc-400 focus:border-zinc-950 focus:bg-white"
           ></textarea>
         </div>
 
         <button
           type="submit"
-          class="inline-flex items-center justify-center rounded-full bg-zinc-950 px-7 py-4 text-sm font-semibold text-white shadow-lg transition hover:bg-zinc-800"
+          class="inline-flex w-full items-center justify-center rounded-full bg-zinc-950 px-7 py-4 text-sm font-semibold text-white transition hover:bg-zinc-800"
         >
           Enviar mensagem
         </button>
+
+        <p class="text-center text-xs leading-5 text-zinc-500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
       </div>
     </form>
   </div>
