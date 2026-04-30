@@ -1,0 +1,24 @@
+# Robots.txt for SEO
+# Allow all crawlers to access the website
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Disallow: /*.json$
+
+# Sitemap reference
+Sitemap: https://example.com/sitemap-index.xml
+
+# Crawl delay and request rate
+Crawl-delay: 1
+Request-rate: 1/1s
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

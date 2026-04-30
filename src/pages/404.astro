@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Página não encontrada - Lorem Ipsum" description="Desculpe, a página que você está procurando não foi encontrada. Retorne ao início do site.">
+	<section class="flex items-center justify-center min-h-[calc(100vh-200px)] px-4 sm:px-6 lg:px-8">
+		<div class="w-full max-w-7xl">
+			<div class="text-center">
+				
+				<div class="mb-8">
+					<h1 class="text-9xl sm:text-[120px] md:text-[150px] font-bold text-zinc-950 leading-none">
+						404
+					</h1>
+				</div>
+
+				
+				<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-zinc-950 mb-4">
+					Página não encontrada
+				</h2>
+
+				
+				<p class="text-lg sm:text-xl text-zinc-600 mb-8 max-w-2xl mx-auto">
+					Desculpe, a página que você está procurando não existe ou foi movida. Não se preocupe, vamos ajudá-lo a voltar ao caminho certo.
+				</p>
+
+				<div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+					<a href="/" class="px-8 py-3 bg-zinc-950 text-white rounded-lg font-semibold hover:bg-zinc-800 transition-colors">
+						Voltar ao início
+					</a>
+					<a href="/#contact" class="px-8 py-3 border-2 border-zinc-950 text-zinc-950 rounded-lg font-semibold hover:bg-zinc-50 transition-colors">
+						Entre em contato
+					</a>
+				</div>
+
+				
+				<div class="mt-16 opacity-20">
+					<svg class="w-32 h-32 sm:w-40 sm:h-40 mx-auto text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
