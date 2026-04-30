@@ -1,0 +1,17 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const phone = "5519999999999";
+const message = "Olá, vim pelo site e gostaria de mais informações.";
+const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+---
+
+<a
+  href={whatsappUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Falar no WhatsApp"
+  class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-600 text-white shadow-lg transition hover:bg-green-700"
+>
+  <Icon name="mdi:whatsapp" class="h-7 w-7" />
+</a>

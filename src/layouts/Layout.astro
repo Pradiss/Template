@@ -1,3 +1,11 @@
+---
+import "../styles/global.css";
+import Footer from "../components/global/Footer.astro";
+import WhatsAppButton from "../components/global/WhatsAppButton.astro";
+import Header from "../components/global/Header.astro";
+---
+
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,9 +16,16 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
-		<slot />
-	</body>
+	<body class="min-h-screen bg-white text-zinc-950">
+    <Header />
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer />
+    <WhatsAppButton />
+  </body>
 </html>
 
 <style>
